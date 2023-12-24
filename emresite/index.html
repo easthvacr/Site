@@ -1,0 +1,376 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+    </style>
+    <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md  fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar-text-light" href="#myCarousel">EAST Teknik Servis</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link  navbar-text-light" aria-current="page" href="#hizmetler">Hizmetler</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide mb-6 carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img class="d-block w-100 h-100" src="carousel-4.jpg" preserveAspectRatio="xMidYMid slice">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1><b>Arıza ve bakım için iletişime geçin.</b></h1>
+                            <p><b>Müşterilerimize cihazlarını düzenli bakım yapmalarını öneriyoruz; böylece uzun ömürlü ve sorunsuz bir kullanımın tadını çıkarabilirler.</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 h-100" src="carousel-2.jpg" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 h-100" src="carousel-3.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        
+                    
+                </div>
+
+
+                <div class="carousel-item">
+                    <img class="d-block w-100 h-100" src="carousel-1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        
+                    
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+            ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row round-cards" id="hizmetler">
+                <div class="col-lg-3">
+                    <svg class="bd-placeholder-img " width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                        role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+
+                        <image xlink:href="round-1.png" width="100%" height="100%" clip-path="url(#clip-circle)" />
+                    </svg>
+                    <h2 class="fw-normal heading1">Endüstriyel Soğutma</h2>
+                    <p><b>Endüstriyel tesisinizin sıcaklık kontrolünü en üst düzeye çıkarmak için yanınızdayız. Uzman
+                            ekibimiz, özel chiller, soğuk oda ve ısı kontrol çözümleriyle işletmenizin verimliliğini
+                            optimize ediyor. Detaylı bilgi ve özel çözümlerimiz için hemen tıklayın!</b></p>
+                    <p><a class="btn btn-secondary" href="#details-1">Detaylar&raquo;</a></p>
+
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-3">
+                    <svg class="bd-placeholder-img " width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                        role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+
+
+                        <image xlink:href="round-2.png" width="80%" height="80%" x="10%" y="15%"
+                            clip-path="url(#clip-circle)" />
+                    </svg>
+                    <h2 class="fw-normal heading2">Endüstriyel İklimlendirme</h2>
+                    <p><b>İdeal iklimlendirme için buradayız! Klima, fan, coil ve klimalı santral sistemlerimizle
+                            işletmenizi mükemmel sıcaklıkta tutuyoruz. Uzman ekibimiz ve özel çözümlerimizle konforunuzu
+                            en üst seviyeye çıkarmak için hemen tıklayın!</b></p>
+                    <p><a class="btn btn-secondary" href="#details-2">Detaylar &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-3">
+                    <svg class="bd-placeholder-img " width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                        role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+
+                        <image xlink:href="round-3.png" width="100%" height="100%" clip-path="url(#clip-circle)" />
+                    </svg>
+                    <h2 class="fw-normal heading3">Endüstriyel Isıtma</h2>
+                    <p><b>Mükemmel sıcaklık her an elinizin altında! İşletmenizin ısıtma ihtiyaçları için özel kombi
+                            kazan çözümlerimizle konforunuzu artırıyoruz. Güvenilir ve etkili ısıtma servisi ile
+                            işletmenizin sıcaklığını kontrol altında tutun. Şimdi bilgi almak için tıklayın!</b></p>
+                    <p><a class="btn btn-secondary" href="#details-2">Detaylar &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-3">
+                    <svg class="bd-placeholder-img " width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                        role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+
+                        <image xlink:href="round-4.png" width="100%" height="100%" clip-path="url(#clip-circle)" />
+                    </svg>
+                    <h2 class="fw-normal heading4">Kahve Mak. & Bulaşıkhane</h2>
+                    <p><b>Kahve makinelerinden buz makinelerine kadar geniş ürün yelpazemizle mutfak deneyiminizi
+                            zenginleştiriyoruz. Kaliteli kahve keyfi ve serin içecekler için tasarlanan çözümlerimizi
+                            keşfedin. Profesyonel mutfak performansı için hemen tıklayın!</b></p>
+                    <p><a class="btn btn-secondary" href="#details-4">Detaylar &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div>
+
+
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider" id="details-1">
+
+            <div>
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal lh-1">Güvenilir Soğutma ve Isı Kontrolü: Hizmetlerimizi
+                            Yakından Tanıyın</h2>
+                        <p class="lead"><b>Endüstriyel soğutma ve ısı kontrolündeki uzmanlığımızla, cihazlarınızın
+                                performansını maksimumda tutmak için kapsamlı bakım hizmetleri sunuyoruz. Periyodik
+                                bakımlarımız, detaylı teknik incelemeleri içerir ve ayrıca gaz kaçağı gibi potansiyel
+                                sorunları önceden belirlemeye odaklanır. Özel eğitimli teknisyenlerimiz, cihazlarınızın
+                                güvenliği ve verimliliği için düzenli gaz kaçak aramalarını da gerçekleştirir.
+                                Müşterilerimize sunduğumuz bu hizmetlerle, endüstriyel tesislerin sıcaklık yönetimini
+                                güvenilir ve etkili bir şekilde sağlamaktayız. Ayrıca, detaylı bakım raporlarımızı
+                                inceleyerek, yapılan işlemleri tam olarak anlayabilir ve tesisinizin uzun ömürlü ve
+                                güvenilir bir şekilde çalışmasını sağlayabilirsiniz. Daha fazla bilgi almak, özel
+                                ihtiyaçlarınızı tartışmak veya servis randevusu almak için lütfen bize ulaşın. İletişim
+                                bilgilerimiz için tıklayın.</b></p>
+                    </div>
+                    <div class="col-md-5">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" />
+
+                            <image xlink:href="square-1.jpg" width="100%" height="100%" preserveAspectRatio="none"
+                                clip-path="url(#clip-rect)" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="featurette-divider" id="details-2">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Geniş Isıtma Çözümleri: Split Klimalardan Brülör
+                        Kazanlara Özel Bakım Hizmetlerimiz</h2>
+                    <p class="lead"><b>Split klimalardan fan coil ünitelerine, paket ünitelerden özel tasarlanmış
+                            chiller sistemlerine, rooftop ünitelerinden brülör kazan ve kombi sistemlerine kadar geniş
+                            bir ısıtma ürün yelpazemizle ısıtma sistemleri bakım ve onarım hizmetleri sunmaktayız.
+                            Ayrıca, bu çeşitli sistemlere özel olarak geliştirilmiş bakım periyotlarımızla
+                            müşterilerimize özel çözümler sunuyoruz. DX ünitelerinde ısı değiştirici temizliği, brülör
+                            kazanlarda yanma kontrolü ve kombi sistemlerinde su devresi bakımı gibi detaylı incelemeleri
+                            içeren bakım hizmetlerimizle, sistemlerin verimliliğini ve güvenilirliğini artırmayı
+                            hedefliyoruz. Düzenli bakımın, enerji tasarrufu sağlamanın yanı sıra arızaların önceden
+                            tespit edilmesi ve sistem ömrünün uzatılması konularında kritik bir rol oynadığını
+                            belirtiyoruz. Profesyonel ekibimizle ısıtma sistemlerinizin sorunsuz ve güvenli bir şekilde
+                            çalışmasını sağlamak için buradayız.</b></p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" />
+                        <!-- Add image element with xlink:href attribute pointing to the image URL -->
+                        <image xlink:href="square-2.png" width="100%" height="100%" preserveAspectRatio="none" />
+                    </svg>
+                </div>
+            </div>
+
+            <hr class="featurette-divider" id="details-4">
+
+
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Mutfak Cihazları Dünyasında Profesyonel Hizmet: Tamir
+                        ve Bakım Çözümlerimizle Mutfak Performansınızı Artırın</h2>
+                    <p class="lead"><b>Kahve makinaları servisi olarak, geniş bir ekipman yelpazemizi kapsayan
+                            hizmetlerimizle işletmenizin kahve deneyimini en üst düzeye çıkarmak için buradayız. Kahve
+                            değirmenleri, blenderlar ve endüstriyel bulaşık makineleri gibi çeşitli ekipmanlarınızın
+                            tamir ve bakımını üstleniyor, iç mekanizmalarını detaylı bir şekilde kontrol ediyoruz.
+                            Ayrıca, buz makinaları tamiri konusundaki uzmanlığımızla sizlere özel çözümler sunuyoruz.
+                            Hizmetlerimiz, kahve makinalarının performansını optimize etmek adına değirmenlerde detaylı
+                            incelemeler ve blenderlardaki motor sorunlarına çözümler içermektedir. Endüstriyel bulaşık
+                            makineleri için su basınç kontrolü, pompa kontrolü ve su ısıtıcı bakımları gibi detaylı
+                            incelemeler gerçekleştiriyoruz. Buz makinalarının su filtresi kontrolü, soğutma sistemleri
+                            ve buz üretim mekanizmalarının bakımı konusunda da özel hizmetler sunmaktayız.
+                            Müşterilerimize, düzenli bakımın ekipmanların performansını artırmanın yanı sıra arızaları
+                            önceden tespit etme ve işletme maliyetlerini azaltma konularında kritik bir rol oynadığını
+                            vurguluyoruz. Profesyonel teknik ekibimizle, size özel kahve makinaları servisi çözümleri
+                            sunmak için buradayız.</b></p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" />
+                        <!-- Add image element with xlink:href attribute pointing to the image URL -->
+                        <image xlink:href="square-3.png" width="100%" height="100%" preserveAspectRatio="none" />
+                    </svg>
+                </div>
+            </div>
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+        <hr class="contact-divider">
+        <!-- FOOTER -->
+
+        <nav class="fixed-bottom" style=" background-color: rgb(49, 82, 60);">
+            <div class="row">
+                <div class="col-md  brandName fixed-bar-text">
+                    <strong>EAST Teknik Servis</strong><br>
+
+                </div>
+
+                <div class="col-md fixed-bar-text" style="text-align: center;">
+                    <b>Cevizli Mah. Gaziantep Sokak 10/11</b><br>
+                    <b>Kartal İstanbul</b><br>
+                </div>
+
+                <div class="col-md fixed-bar-text phoneNumber" >
+                    <b> <a href="tel:05414612738">0541 461 2738</a></b>
+                </div>
+
+                <div class="col-md fixed-bar-text">
+                    <strong>Emre Alper</strong><br>
+                    <a id="eMail"><strong>e.alper34@hotmail.com</strong></a>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+        </nav>
+
+
+    </main>
+
+
+</body>
+
+</html>
